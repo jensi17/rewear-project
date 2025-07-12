@@ -27,3 +27,9 @@ Submit to list item
 Moderate and approve/reject item listings
 Remove inappropriate or spam items
 Lightweight admin panel for oversight
+
+//members detail
+Krishkumar Darji - 24dce027@charusat.edu.in
+Ashiti Agath - 24dce004@charusat.edu.in
+Jenshi Ghori - 24dce042@charusat.edu.in
+Harshil Desai - 24dce030@charusat.edu.in
