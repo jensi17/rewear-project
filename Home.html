@@ -296,8 +296,9 @@
         }
         
         /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+       .hero {
+            background-image: url("BG.png");
+            background-size: cover;
             padding: 80px 0;
             text-align: center;
             position: relative;
@@ -311,12 +312,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+            /* background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>'); */
             background-size: cover;
             z-index: 0;
         }
         
         .hero-content {
+            
             max-width: 700px;
             margin: 0 auto;
             position: relative;
@@ -324,16 +326,18 @@
         }
         
         .hero h1 {
+            color:#060606;
             font-size: 3rem;
             margin-bottom: 20px;
-            color: var(--dark);
+            /* color: var(--dark); */
             animation: fadeInUp 1s forwards;
         }
         
         .hero p {
+            color: #060606;
             font-size: 1.2rem;
             margin-bottom: 30px;
-            color: var(--gray);
+            /* color: var(--gray); */
             animation: fadeInUp 1s 0.3s forwards;
             opacity: 0;
         }
@@ -1086,6 +1090,22 @@
             opacity: 0;
             animation-delay: 1s;
         }
+        .hero .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            /* White overlay, adjust opacity */
+            z-index: 1;
+        }
+
+        .hero .hero-content,
+        .hero .floating-icon {
+            position: relative;
+            z-index: 2;
+        }
         /* Responsive Design */
         @media (max-width: 992px) {
             .hero h1 {
@@ -1144,6 +1164,7 @@
             .floating-icon {
                 display: none;
             }
+         
         }
     </style>
 </head>
@@ -1170,12 +1191,14 @@
     </header>
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="overlay"></div>
         <div class="floating-icon"><i class="fas fa-tshirt"></i></div>
         <div class="floating-icon"><i class="fas fa-recycle"></i></div>
         <div class="floating-icon"><i class="fas fa-leaf"></i></div>
         <div class="container hero-content">
-            <h1>Transform Your Wardrobe, Transform the Planet</h1>
-            <p>Join our community to exchange unused clothing, earn points, and promote sustainable fashion. Give your clothes a second life while reducing textile waste.</p>
+            <h1 style="color: black;">Transform Your Wardrobe, Transform the Planet</h1>
+            <p style="color: black;">Join our community to exchange unused clothing, earn points, and promote
+                sustainable fashion. Give your clothes a second life while reducing textile waste.</p>
             <div class="hero-buttons">
                 <button class="btn btn-primary">Start Swapping</button>
                 <button class="btn btn-outline">Browse Items</button>
@@ -1226,10 +1249,12 @@
             <div class="items-grid">
                 <div class="item-card">
                     <div class="item-image">
-                        <i class="fas fa-tshirt"></i>
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRQJucQpdXpFicy_bO2CEfKjok_6wy9B-V3td04ljK4QVS7iE0LOOFCqFea82S6tDuXKN-8lwq8UbMG3WfAXTqYsNLXdIIkYYl1yQT9OBfgM7NupVMs75-D" style="height:100% ; width:100%;" >
+                        <!-- <i class="fas fa-tshirt"></i> -->
                     </div>
                     <div class="item-info">
                         <h3>Summer Floral Dress</h3>
+                
                         <p>Size: M • Condition: Like New</p>
                         <div class="item-meta">
                             <span>By: Emma S.</span>
@@ -1239,7 +1264,8 @@
                 </div>
                 <div class="item-card">
                     <div class="item-image">
-                        <i class="fas fa-tshirt"></i>
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSOwl662Gwyhns5WdbfFpZsSJHUBvGuvc3X9Ev_KGPOZ4AI8M_KTRo5FEUGty0rmIQ1Tivoq9uCzclVH8v8N77tEEHcX8ta6ICpb_pFf0F9yGiFzfyvtOp5MA"  style="height:100% ; width:100%;">
+                        <!-- <i class="fas fa-tshirt"></i> -->
                     </div>
                     <div class="item-info">
                         <h3>Denim Jacket</h3>
@@ -1252,7 +1278,8 @@
                 </div>
                 <div class="item-card">
                     <div class="item-image">
-                        <i class="fas fa-tshirt"></i>
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTcIS7CiPVYad31PQz5OaUcwPqroFAXotfXmOMwokjqSTjof7Ui9AwJTPO1fo3LaWKv62W7mKL8pIKRwNgCskW7o-xAmqOnJLlBBp_MBectaExt1Xjy1EQyNg" style="height:100%;width:100%">
+                        <!-- <i class="fas fa-tshirt"></i> -->
                     </div>
                     <div class="item-info">
                         <h3>Leather Boots</h3>
@@ -1265,7 +1292,8 @@
                 </div>
                 <div class="item-card">
                     <div class="item-image">
-                        <i class="fas fa-tshirt"></i>
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTubl6t0G1t3gYAG9alUQNBjA5QBvdCcdZRTojbIxOk4opSb9p8LgVaFOQeh3_SCQvaCdgA8o-RsyTdYFmP8b7fK3QdkJUMwsYGEDbHX0it0DRw2HcJpIuC"  style="height:100%;width:100%">
+                        <!-- <i class="fas fa-tshirt"></i> -->
                     </div>
                     <div class="item-info">
                         <h3>Winter Coat</h3>
@@ -1312,9 +1340,11 @@
                 <div class="items-grid">
                     <div class="item-card">
                         <div class="item-image">
-                            <i class="fas fa-tshirt"></i>
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSOwl662Gwyhns5WdbfFpZsSJHUBvGuvc3X9Ev_KGPOZ4AI8M_KTRo5FEUGty0rmIQ1Tivoq9uCzclVH8v8N77tEEHcX8ta6ICpb_pFf0F9yGiFzfyvtOp5MA" style="height:100%; width:100%;">
+                            <!-- <i class="fas fa-tshirt"></i> -->
                         </div>
                         <div class="item-info">
+
                             <h3>Denim Jacket</h3>
                             <p>Size: M • Condition: Good</p>
                             <div class="item-meta">
@@ -1325,7 +1355,8 @@
                     </div>
                     <div class="item-card">
                         <div class="item-image">
-                            <i class="fas fa-tshirt"></i>
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ5GC42icbirwCcSGCDqbo3d_wQOt8zjzUOBkjWh57cnLdlpwIIcBAj_9pBjY0uZboHFtAKMNRbZmEo9j6HvCv47fyXL-fgRPBkUNMlOeK8cSARkvvAMLdeJQ" style="height:100%; width:100%;">
+                            <!-- <i class="fas fa-tshirt"></i> -->
                         </div>
                         <div class="item-info">
                             <h3>Winter Scarf</h3>
@@ -1345,9 +1376,11 @@
         <div class="container">
             <div class="item-detail">
                 <div class="item-gallery">
-                    <i class="fas fa-tshirt"></i>
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRZeFYwT4ZWhUF9lMIJovsxhEWwxmTiUhgnpO_LcvAzg7CfOeZoz8J8limpqriWvFoCecsqJxC5D9u0BSNyzMALjD2pYO_tO44_x-9syaAckSuh6IUQRFKQBw" style="width:100%;height: 100% ;">
+                    <!-- <i class="fas fa-tshirt"></i> -->
                 </div>
                 <div class="item-details">
+                   
                     <h2>Classic Denim Jacket</h2>
                     <div class="item-description">
                         Vintage-style denim jacket in excellent condition. Perfect for casual wear. Features classic stitching and button closures.
