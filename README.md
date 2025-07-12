@@ -27,7 +27,7 @@ Submit to list item
 Moderate and approve/reject item listings
 Remove inappropriate or spam items
 Lightweight admin panel for oversight
-
+OUR WEBSITES EXPLANATION VIDEO LINK :- https://drive.google.com/file/d/1th02Thzh6L0c7VrRdLsVh2xMlRaBwp_e/view?usp=sharing
 //Team detail
 team-1927(LIGHTING SQUAD)
 Krishkumar Darji - 24dce027@charusat.edu.in
